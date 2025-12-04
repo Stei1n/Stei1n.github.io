@@ -9,11 +9,10 @@
     <!-- Carga de Lucide Icons (para los iconos) -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
-    <!-- Enlace al archivo CSS externo -->
+    <!-- Enlace al archivo CSS externo (styles.css) -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- [Contenido HTML principal...] -->
 
     <!-- Botón Flotante para cambiar tema -->
     <button id="theme-toggle" aria-label="Cambiar Tema">
@@ -26,41 +25,36 @@
         <!-- HEADER: Información de Contacto y Nombre -->
         <header class="pb-6 border-b" style="border-color: var(--color-section-border);">
             <h1 class="text-4xl font-extrabold tracking-tight header-title">DILAN ESTIBEN ESPINOSA LARA</h1>
-            <p class="text-xl font-medium mt-1 subheader-text">Desarrollador Junior Full-Stack</p>
+            <p class="text-xl font-medium mt-1 subheader-text">Desarrollador Junior Web Full-Stack</p>
 
             <!-- Contactos -->
             <div class="flex flex-wrap gap-y-2 gap-x-6 mt-3 text-sm contact-text">
                 <div class="flex items-center space-x-2">
-                    <!-- ICONO CORREGIDO: Usando la nueva clase icon-color -->
                     <i data-lucide="map-pin" class="w-4 h-4 icon-color"></i>
                     <span>Facatativá, Cundinamarca</span>
                 </div>
                 <div class="flex items-center space-x-2">
-                    <!-- ICONO CORREGIDO: Usando la nueva clase icon-color -->
                     <i data-lucide="mail" class="w-4 h-4 icon-color"></i>
                     <a href="mailto:dilanespinosalara@gmail.com" class="hover:underline">dilanespinosalara@gmail.com</a>
                 </div>
                 <div class="flex items-center space-x-2">
-                    <!-- ICONO CORREGIDO: Usando la nueva clase icon-color -->
                     <i data-lucide="phone" class="w-4 h-4 icon-color"></i>
                     <span>320-859-4438</span>
                 </div>
-                <!-- Perfil de LinkedIn (original) -->
+                <!-- Perfil de LinkedIn -->
                 <div class="flex items-center space-x-2">
-                    <!-- ICONO CORREGIDO: Usando la nueva clase icon-color -->
                     <i data-lucide="linkedin" class="w-4 h-4 icon-color"></i>
                     <a href="https://www.linkedin.com/in/dilan-estiben-espinosa-lara-531b90219/" target="_blank" class="hover:underline">LinkedIn Profile</a>
                 </div>
-                <!-- Perfil de GitHub (nuevo) -->
+                <!-- Perfil de GitHub -->
                 <div class="flex items-center space-x-2">
-                    <!-- ICONO CORREGIDO: Usando la nueva clase icon-color -->
                     <i data-lucide="github" class="w-4 h-4 icon-color"></i>
                     <a href="https://github.com/Stei1n" target="_blank" class="hover:underline">GitHub/Stei1n</a>
                 </div>
             </div>
         </header>
 
-        <!-- GRID PRINCIPAL: Perfil a la izquierda, Contenido a la derecha (en desktop) -->
+        <!-- GRID PRINCIPAL: Perfil, Habilidades, Educación y Experiencia/Portafolio -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
             <!-- COLUMNA IZQUIERDA: Perfil y Habilidades / Educación -->
@@ -86,7 +80,6 @@
                     <div class="space-y-4">
                         <div class="flex flex-wrap gap-2">
                             <span class="text-sm font-semibold w-full mb-1 contact-text">Lenguajes:</span>
-                            <!-- Las habilidades están separadas por comas en el texto original, las convertimos a tags -->
                             <span class="skill-tag px-3 py-1 rounded-full text-xs">JavaScript (JS)</span>
                             <span class="skill-tag px-3 py-1 rounded-full text-xs">TypeScript (TS)</span>
                             <span class="skill-tag px-3 py-1 rounded-full text-xs">HTML5</span>
@@ -204,15 +197,13 @@
                         </div>
 
                         <div class="flex space-x-3 mt-4">
-                            <!-- DEMO URL (Sugerido para usar GitHub Pages) -->
+                            <!-- DEMO URL (DEBES CAMBIAR ESTO) -->
                             <a href="https://stei1n.github.io/kanban-task-manager/" target="_blank" class="btn-link btn-demo">
-                                <!-- ICONO CORREGIDO: Usando clase icon-color -->
                                 <i data-lucide="play" class="w-4 h-4 mr-2 icon-color-inverted"></i>
                                 Ver Demo
                             </a>
-                            <!-- CÓDIGO FUENTE URL -->
+                            <!-- CÓDIGO FUENTE URL (DEBES CAMBIAR ESTO) -->
                             <a href="https://github.com/Stei1n/kanban-task-manager" target="_blank" class="btn-link btn-code">
-                                <!-- ICONO CORREGIDO: Usando clase icon-color -->
                                 <i data-lucide="code" class="w-4 h-4 mr-2 icon-color"></i>
                                 Código Fuente
                             </a>
@@ -232,15 +223,13 @@
                         </div>
 
                         <div class="flex space-x-3 mt-4">
-                            <!-- DEMO URL (Sugerido para usar un endpoint o un simulador) -->
+                            <!-- DEMO URL (DEBES CAMBIAR ESTO) -->
                             <a href="https://stei1n.github.io/ecommerce-rest-api-demo/" target="_blank" class="btn-link btn-demo">
-                                <!-- ICONO CORREGIDO: Usando clase icon-color -->
                                 <i data-lucide="play" class="w-4 h-4 mr-2 icon-color-inverted"></i>
                                 Ver Demo
                             </a>
-                            <!-- CÓDIGO FUENTE URL -->
+                            <!-- CÓDIGO FUENTE URL (DEBES CAMBIAR ESTO) -->
                             <a href="https://github.com/Stei1n/ecommerce-rest-api" target="_blank" class="btn-link btn-code">
-                                <!-- ICONO CORREGIDO: Usando clase icon-color -->
                                 <i data-lucide="code" class="w-4 h-4 mr-2 icon-color"></i>
                                 Código Fuente
                             </a>
@@ -248,7 +237,7 @@
                     </div>
 
                     <p class="text-xs mt-4 italic experience-date">
-                        *Los enlaces de Proyectos son sugeridos. Debes crear los repositorios y reemplazarlos con tus URLs reales y únicas.
+                        *Recuerda reemplazar los enlaces con las URLs reales de tus demos desplegadas y tus repositorios de GitHub.
                     </p>
                 </section>
             </main>
@@ -256,7 +245,7 @@
 
     </div>
 
-    <!-- Enlace al archivo JavaScript externo -->
+    <!-- Enlace al archivo JavaScript externo (tema.js) -->
     <script src="tema.js"></script>
 
 </body>
