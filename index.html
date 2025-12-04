@@ -6,17 +6,17 @@
     <title>Dilan Espinosa - Desarrollador Web Junior</title>
     <!-- Carga de Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Carga de Lucide Icons (para los iconos) -->
+    <!-- Carga de Lucide Icons (¡Esencial para los iconos!) -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
-    <!-- Enlace al archivo CSS externo (styles.css) -->
+    <!-- ENLACE AL ARCHIVO DE ESTILOS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Botón Flotante para cambiar tema -->
     <button id="theme-toggle" aria-label="Cambiar Tema">
-        <!-- Icono inicial (se cambiará con JS) -->
+        <!-- El JS se encarga de crear el SVG del icono correcto (luna o sol) -->
         <i data-lucide="moon" id="theme-icon" class="w-6 h-6"></i>
     </button>
     
@@ -30,6 +30,7 @@
             <!-- Contactos -->
             <div class="flex flex-wrap gap-y-2 gap-x-6 mt-3 text-sm contact-text">
                 <div class="flex items-center space-x-2">
+                    <!-- Clase icon-color para el color dinámico del tema -->
                     <i data-lucide="map-pin" class="w-4 h-4 icon-color"></i>
                     <span>Facatativá, Cundinamarca</span>
                 </div>
@@ -181,55 +182,54 @@
                     </div>
                 </section>
 
-                <!-- PORTAFOLIO Y PROYECTOS -->
+                <!-- PORTAFOLIO Y PROYECTOS (ACTUALIZADO CON TUS REPOSITORIOS) -->
                 <section>
                     <h2 class="section-title text-lg uppercase">Portafolio y Proyectos</h2>
 
-                    <!-- PROYECTO 1: Gestor de Tareas Colaborativo (Kanban) -->
+                    <!-- PROYECTO 1: To-Do-App -->
                     <div class="project-card main-card p-5 rounded-lg shadow-md mb-4 border" style="border-color: var(--color-card-border);">
-                        <h3 class="text-xl font-bold experience-title mb-2">Gestor de Tareas Colaborativo (Kanban)</h3>
-                        <p class="text-sm contact-text mb-3">Aplicación Full-Stack para la gestión de proyectos y tareas en tiempo real, implementando autenticación de usuarios y persistencia de datos con Firebase/Firestore.</p>
+                        <h3 class="text-xl font-bold experience-title mb-2">To-Do-App (Gestor de Tareas)</h3>
+                        <p class="text-sm contact-text mb-3">Aplicación simple y funcional para la gestión de listas de tareas diarias, enfocada en la usabilidad y la demostración de manipulación del DOM y estado (usando JavaScript).</p>
                         
                         <div class="flex flex-wrap gap-2 mb-3">
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">React</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Tailwind CSS</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Firestore</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">JavaScript</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">HTML5</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">CSS3</span>
                         </div>
 
                         <div class="flex space-x-3 mt-4">
-                            <!-- DEMO URL (DEBES CAMBIAR ESTO) -->
-                            <a href="https://stei1n.github.io/kanban-task-manager/" target="_blank" class="btn-link btn-demo">
+                            <!-- DEMO URL (Usando el nombre de tu repo To-Do-App) -->
+                            <a href="https://stei1n.github.io/To-Do-App/" target="_blank" class="btn-link btn-demo">
                                 <i data-lucide="play" class="w-4 h-4 mr-2 icon-color-inverted"></i>
                                 Ver Demo
                             </a>
-                            <!-- CÓDIGO FUENTE URL (DEBES CAMBIAR ESTO) -->
-                            <a href="https://github.com/Stei1n/kanban-task-manager" target="_blank" class="btn-link btn-code">
+                            <!-- CÓDIGO FUENTE URL (Usando el nombre de tu repo To-Do-App) -->
+                            <a href="https://github.com/Stei1n/To-Do-App" target="_blank" class="btn-link btn-code">
                                 <i data-lucide="code" class="w-4 h-4 mr-2 icon-color"></i>
                                 Código Fuente
                             </a>
                         </div>
                     </div>
 
-                    <!-- PROYECTO 2: API RESTful para E-commerce -->
+                    <!-- PROYECTO 2: Blog-personal -->
                     <div class="project-card main-card p-5 rounded-lg shadow-md border" style="border-color: var(--color-card-border);">
-                        <h3 class="text-xl font-bold experience-title mb-2">API RESTful para E-commerce</h3>
-                        <p class="text-sm contact-text mb-3">Desarrollo de una API robusta para manejar productos, usuarios y pedidos. Implementado con Node.js, Express.js y MySQL, siguiendo buenas prácticas REST.</p>
+                        <h3 class="text-xl font-bold experience-title mb-2">Blog Personal</h3>
+                        <p class="text-sm contact-text mb-3">Plataforma de publicación de artículos con un sistema de comentarios y un panel de administración. Demuestra habilidades en la creación de interfaces de usuario complejas y lógica de negocio (usando JavaScript).</p>
                         
                         <div class="flex flex-wrap gap-2 mb-3">
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Node.js</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Express.js</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">MySQL</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">REST API</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">JavaScript</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">HTML/CSS</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Diseño UI</span>
                         </div>
 
                         <div class="flex space-x-3 mt-4">
-                            <!-- DEMO URL (DEBES CAMBIAR ESTO) -->
-                            <a href="https://stei1n.github.io/ecommerce-rest-api-demo/" target="_blank" class="btn-link btn-demo">
+                            <!-- DEMO URL (Usando el nombre de tu repo Blog-personal) -->
+                            <a href="https://stei1n.github.io/Blog-personal/" target="_blank" class="btn-link btn-demo">
                                 <i data-lucide="play" class="w-4 h-4 mr-2 icon-color-inverted"></i>
                                 Ver Demo
                             </a>
-                            <!-- CÓDIGO FUENTE URL (DEBES CAMBIAR ESTO) -->
-                            <a href="https://github.com/Stei1n/ecommerce-rest-api" target="_blank" class="btn-link btn-code">
+                            <!-- CÓDIGO FUENTE URL (Usando el nombre de tu repo Blog-personal) -->
+                            <a href="https://github.com/Stei1n/Blog-personal" target="_blank" class="btn-link btn-code">
                                 <i data-lucide="code" class="w-4 h-4 mr-2 icon-color"></i>
                                 Código Fuente
                             </a>
@@ -237,7 +237,7 @@
                     </div>
 
                     <p class="text-xs mt-4 italic experience-date">
-                        *Recuerda reemplazar los enlaces con las URLs reales de tus demos desplegadas y tus repositorios de GitHub.
+                        *Asegúrate de que los nombres de repositorio **To-Do-App** y **Blog-personal** coincidan con los de tu GitHub.
                     </p>
                 </section>
             </main>
@@ -245,7 +245,7 @@
 
     </div>
 
-    <!-- Enlace al archivo JavaScript externo (tema.js) -->
+    <!-- ENLACE AL ARCHIVO JAVASCRIPT: ¡DEBE LLAMARSE TEMA.JS EN TU CARPETA! -->
     <script src="tema.js"></script>
 
 </body>
