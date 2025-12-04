@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilan Espinosa - Desarrollador Web Junior</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de Lucide Icons (para los iconos) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- [Contenido HTML principal...] -->
+
+    <!-- Botón Flotante para cambiar tema -->
+    <button id="theme-toggle" aria-label="Cambiar Tema">
+        <!-- Icono inicial (se cambiará con JS) -->
+        <i data-lucide="moon" id="theme-icon" class="w-6 h-6"></i>
+    </button>
+    
+    <!-- Contenedor Principal Centrado -->
+    <div class="max-w-4xl mx-auto p-6 md:p-10 main-card rounded-xl my-8">
+        <!-- HEADER: Información de Contacto y Nombre -->
+        <header class="pb-6 border-b" style="border-color: var(--color-section-border);">
+            <h1 class="text-4xl font-extrabold tracking-tight header-title">DILAN ESTIBEN ESPINOSA LARA</h1>
+            <p class="text-xl font-medium mt-1 subheader-text">Desarrollador Junior Full-Stack</p>
+
+            <!-- Contactos -->
+            <div class="flex flex-wrap gap-y-2 gap-x-6 mt-3 text-sm contact-text">
+                <div class="flex items-center space-x-2">
+                    <!-- ICONO CORREGIDO: Usando la nueva clase icon-color -->
+                    <i data-lucide="map-pin" class="w-4 h-4 icon-color"></i>
+                    <span>Facatativá, Cundinamarca</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <!-- ICONO CORREGIDO: Usando la nueva clase icon-color -->
+                    <i data-lucide="mail" class="w-4 h-4 icon-color"></i>
+                    <a href="mailto:dilanespinosalara@gmail.com" class="hover:underline">dilanespinosalara@gmail.com</a>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <!-- ICONO CORREGIDO: Usando la nueva clase icon-color -->
+                    <i data-lucide="phone" class="w-4 h-4 icon-color"></i>
+                    <span>320-859-4438</span>
+                </div>
+                <!-- Perfil de LinkedIn (original) -->
+                <div class="flex items-center space-x-2">
+                    <!-- ICONO CORREGIDO: Usando la nueva clase icon-color -->
+                    <i data-lucide="linkedin" class="w-4 h-4 icon-color"></i>
+                    <a href="https://www.linkedin.com/in/dilan-estiben-espinosa-lara-531b90219/" target="_blank" class="hover:underline">LinkedIn Profile</a>
+                </div>
+                <!-- Perfil de GitHub (nuevo) -->
+                <div class="flex items-center space-x-2">
+                    <!-- ICONO CORREGIDO: Usando la nueva clase icon-color -->
+                    <i data-lucide="github" class="w-4 h-4 icon-color"></i>
+                    <a href="https://github.com/Stei1n" target="_blank" class="hover:underline">GitHub/Stei1n</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- GRID PRINCIPAL: Perfil a la izquierda, Contenido a la derecha (en desktop) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- COLUMNA IZQUIERDA: Perfil y Habilidades / Educación -->
+            <aside class="md:col-span-1 space-y-8">
+
+                <!-- PERFIL PROFESIONAL -->
+                <section>
+                    <h2 class="section-title text-lg uppercase">Perfil</h2>
+                    <p class="text-sm leading-relaxed contact-text">
+                        Desarrollador Junior Web con 1 año de experiencia profesional en la implementación de soluciones Full-Stack.
+                        Sólida formación técnica en el SENA y actual estudiante de Ingeniería de Sistemas. Experiencia práctica en
+                        producción con tecnologías como Node.js, Express y MySQL. Destacado por la participación exitosa en
+                        proyectos en producción, la capacidad para resolver bugs y el desarrollo de nuevos módulos funcionales bajo
+                        metodología SCRUM. Busco un rol remoto para aplicar y expandir mis conocimientos en arquitecturas modernas.
+                    </p>
+                </section>
+
+                <!-- HABILIDADES TÉCNICAS -->
+                <section>
+                    <h2 class="section-title text-lg uppercase">Habilidades Técnicas</h2>
+
+                    <!-- Categorías de Habilidades -->
+                    <div class="space-y-4">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-sm font-semibold w-full mb-1 contact-text">Lenguajes:</span>
+                            <!-- Las habilidades están separadas por comas en el texto original, las convertimos a tags -->
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">JavaScript (JS)</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">TypeScript (TS)</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">HTML5</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">CSS3</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">SQL</span>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-sm font-semibold w-full mb-1 contact-text">Frameworks/Librerías:</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Angular</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">React</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Node.js</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Express.js</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Laravel</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">WordPress</span>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-sm font-semibold w-full mb-1 contact-text">Bases de Datos:</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">MySQL</span>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-sm font-semibold w-full mb-1 contact-text">Herramientas/Metodologías:</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Git</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">SCRUM</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Desarrollo Front-end</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Desarrollo Back-end</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- EDUCACIÓN -->
+                <section>
+                    <h2 class="section-title text-lg uppercase">Educación</h2>
+
+                    <!-- UNIMINUTO -->
+                    <div class="education-card p-4 rounded-lg main-card mb-4 border" style="border-color: var(--color-card-border);">
+                        <h3 class="font-bold experience-title">Ingeniería, Systems Engineering</h3>
+                        <p class="text-sm experience-subtitle">UNIMINUTO Colombia</p>
+                        <p class="text-xs mt-1 experience-date">Feb. 2025 – Actualidad</p>
+                    </div>
+
+                    <!-- SENA -->
+                    <div class="education-card p-4 rounded-lg main-card border" style="border-color: var(--color-card-border);">
+                        <h3 class="font-bold experience-title">Tecnico en programacion de software</h3>
+                        <p class="text-sm experience-subtitle">Servicio Nacional de Aprendizaje (SENA)</p>
+                        <p class="text-xs mt-1 experience-date">Mar. 2022 – Oct. 2024</p>
+                    </div>
+                </section>
+
+            </aside>
+
+            <!-- COLUMNA DERECHA: Experiencia Laboral y Portafolio -->
+            <main class="md:col-span-2 space-y-8">
+                
+                <!-- EXPERIENCIA LABORAL -->
+                <section>
+                    <h2 class="section-title text-lg uppercase">Experiencia Laboral</h2>
+
+                    <!-- EXPERIENCIA 1: 1ByteAtATime -->
+                    <div class="experience-card main-card p-5 rounded-lg border-l-4 border-l-cyan-600 shadow-md mb-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h3 class="text-xl font-bold experience-title">Desarrollador</h3>
+                                <p class="text-md font-semibold experience-subtitle">1ByteAtATime</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-sm font-medium experience-date whitespace-nowrap">Ago. 2023 – Abr. 2024</span>
+                                <p class="text-xs experience-date">Bogotá</p>
+                            </div>
+                        </div>
+
+                        <ul class="list-disc ml-5 list-item space-y-2 text-sm">
+                            <li>Implementación Full-Stack de nuevas funcionalidades en la plataforma GPSByte, participando en el ciclo completo de desarrollo, desde la conceptualización hasta el deployment a producción.</li>
+                            <li>Resolución activa de conflictos de código y bugs en un entorno de desarrollo compartido, utilizando Git para mantener la estabilidad del branch principal.</li>
+                            <li>Integración exitosa de librerías y herramientas de terceros para mejorar la eficiencia y capacidad del sistema.</li>
+                        </ul>
+                    </div>
+
+                    <!-- EXPERIENCIA 2: Servimax & Cía. -->
+                    <div class="experience-card main-card p-5 rounded-lg border-l-4 border-l-cyan-600 shadow-md">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h3 class="text-xl font-bold experience-title">Desarrollador Web Junior</h3>
+                                <p class="text-md font-semibold experience-subtitle">Servimax & Cía.</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-sm font-medium experience-date whitespace-nowrap">Ene. 2023 – Jul. 2023</span>
+                                <p class="text-xs experience-date">Bogotá</p>
+                            </div>
+                        </div>
+
+                        <ul class="list-disc ml-5 list-item space-y-2 text-sm">
+                            <li>Desarrollo de módulos clave, incluyendo Inventario y un Esquema Financiero, demostrando habilidad para mapear requerimientos de negocio a soluciones funcionales.</li>
+                            <li>Diseño e implementación de un Modelo Entidad-Relación (ER) para optimizar la estructura de la base de datos MySQL.</li>
+                            <li>Mantenimiento y corrección proactiva de fallos en producción, asegurando la continuidad operativa de la aplicación.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- PORTAFOLIO Y PROYECTOS -->
+                <section>
+                    <h2 class="section-title text-lg uppercase">Portafolio y Proyectos</h2>
+
+                    <!-- PROYECTO 1: Gestor de Tareas Colaborativo (Kanban) -->
+                    <div class="project-card main-card p-5 rounded-lg shadow-md mb-4 border" style="border-color: var(--color-card-border);">
+                        <h3 class="text-xl font-bold experience-title mb-2">Gestor de Tareas Colaborativo (Kanban)</h3>
+                        <p class="text-sm contact-text mb-3">Aplicación Full-Stack para la gestión de proyectos y tareas en tiempo real, implementando autenticación de usuarios y persistencia de datos con Firebase/Firestore.</p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">React</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Tailwind CSS</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Firestore</span>
+                        </div>
+
+                        <div class="flex space-x-3 mt-4">
+                            <!-- DEMO URL (Sugerido para usar GitHub Pages) -->
+                            <a href="https://stei1n.github.io/kanban-task-manager/" target="_blank" class="btn-link btn-demo">
+                                <!-- ICONO CORREGIDO: Usando clase icon-color -->
+                                <i data-lucide="play" class="w-4 h-4 mr-2 icon-color-inverted"></i>
+                                Ver Demo
+                            </a>
+                            <!-- CÓDIGO FUENTE URL -->
+                            <a href="https://github.com/Stei1n/kanban-task-manager" target="_blank" class="btn-link btn-code">
+                                <!-- ICONO CORREGIDO: Usando clase icon-color -->
+                                <i data-lucide="code" class="w-4 h-4 mr-2 icon-color"></i>
+                                Código Fuente
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- PROYECTO 2: API RESTful para E-commerce -->
+                    <div class="project-card main-card p-5 rounded-lg shadow-md border" style="border-color: var(--color-card-border);">
+                        <h3 class="text-xl font-bold experience-title mb-2">API RESTful para E-commerce</h3>
+                        <p class="text-sm contact-text mb-3">Desarrollo de una API robusta para manejar productos, usuarios y pedidos. Implementado con Node.js, Express.js y MySQL, siguiendo buenas prácticas REST.</p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Node.js</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Express.js</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">MySQL</span>
+                            <span class="skill-tag px-3 py-1 rounded-full text-xs">REST API</span>
+                        </div>
+
+                        <div class="flex space-x-3 mt-4">
+                            <!-- DEMO URL (Sugerido para usar un endpoint o un simulador) -->
+                            <a href="https://stei1n.github.io/ecommerce-rest-api-demo/" target="_blank" class="btn-link btn-demo">
+                                <!-- ICONO CORREGIDO: Usando clase icon-color -->
+                                <i data-lucide="play" class="w-4 h-4 mr-2 icon-color-inverted"></i>
+                                Ver Demo
+                            </a>
+                            <!-- CÓDIGO FUENTE URL -->
+                            <a href="https://github.com/Stei1n/ecommerce-rest-api" target="_blank" class="btn-link btn-code">
+                                <!-- ICONO CORREGIDO: Usando clase icon-color -->
+                                <i data-lucide="code" class="w-4 h-4 mr-2 icon-color"></i>
+                                Código Fuente
+                            </a>
+                        </div>
+                    </div>
+
+                    <p class="text-xs mt-4 italic experience-date">
+                        *Los enlaces de Proyectos son sugeridos. Debes crear los repositorios y reemplazarlos con tus URLs reales y únicas.
+                    </p>
+                </section>
+            </main>
+        </div>
+
+    </div>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="tema.js"></script>
+
+</body>
+</html>

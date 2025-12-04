@@ -1,0 +1,136 @@
+/* Carga de fuente Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+/* Definición de variables CSS para ambos temas */
+:root {
+    /* Tema Claro */
+    --color-primary: #0077B6; /* Azul profesional */
+    --color-secondary: #00B4D8;
+    --color-text: #1F2937;
+    --color-bg: #F9FAFB;
+    --color-card-bg: #FFFFFF;
+    --color-card-border: #E5E7EB;
+    --color-skill-bg: #E0F2FE;
+    --color-skill-text: #0077B6;
+    --color-section-border: #E5E7EB;
+    --color-link-text: #6B7280; /* Color principal de iconos/enlaces */
+}
+
+/* Tema Oscuro (clase .dark) */
+.dark {
+    --color-primary: #8DECFD; /* Azul más claro para contraste */
+    --color-secondary: #40BFFF;
+    --color-text: #E5E7EB; /* Gris claro */
+    --color-bg: #0F172A; /* Azul oscuro/negro */
+    --color-card-bg: #1E293B; /* Gris oscuro para tarjetas */
+    --color-card-border: #334155;
+    --color-skill-bg: #1D4ED8;
+    --color-skill-text: #E0F2FE;
+    --color-section-border: #334155;
+    --color-link-text: #9CA3AF; /* Color principal de iconos/enlaces */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: background-color 0.3s, color 0.3s;
+}
+.section-title {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-secondary);
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-color: var(--color-secondary);
+}
+.main-card {
+    background-color: var(--color-card-bg);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+    border: 1px solid var(--color-card-border);
+}
+/* Estilos para la interactividad (sutiles efectos hover) */
+.experience-card, .education-card, .project-card {
+    background-color: var(--color-card-bg);
+    border-color: var(--color-card-border);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s, border-color 0.3s;
+}
+.experience-card:hover, .education-card:hover, .project-card:hover {
+    transform: translateY(-2px);
+    /* Sombra ajustada para ambos modos */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+.skill-tag {
+    background-color: var(--color-skill-bg);
+    color: var(--color-skill-text);
+    font-weight: 500;
+    cursor: default;
+}
+/* Ajuste de colores de texto internos */
+.header-title { color: var(--color-text); }
+.subheader-text { color: var(--color-primary); }
+.contact-text { color: var(--color-link-text); }
+.content-text { color: var(--color-text); }
+.experience-title { color: var(--color-text); }
+.experience-subtitle { color: var(--color-link-text); }
+.experience-date { color: var(--color-link-text); }
+.list-item { color: var(--color-link-text); }
+
+
+/* ************ NUEVOS ESTILOS PARA ICONOS ************ */
+/* Clase para iconos de contacto (usa el color del texto de enlace) */
+.icon-color {
+    color: var(--color-link-text);
+}
+
+/* Clase para iconos dentro de botones con color primario (deben ser blancos) */
+.icon-color-inverted {
+    color: var(--color-card-bg); /* En modo claro es blanco, en modo oscuro es gris claro */
+}
+/* **************************************************** */
+
+
+/* Estilos para los botones de Demo y Código */
+.btn-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    font-size: 0.875rem; /* text-sm */
+}
+.btn-demo {
+    background-color: var(--color-primary);
+    color: var(--color-card-bg); /* Color de fondo de tarjeta para contraste */
+}
+.btn-demo:hover {
+    opacity: 0.8;
+}
+.btn-code {
+    background-color: var(--color-card-bg);
+    color: var(--color-text);
+    border: 1px solid var(--color-card-border);
+}
+.btn-code:hover {
+    background-color: var(--color-section-border);
+}
+
+/* Estilo del botón de Toggle de tema */
+#theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 50;
+    transition: background-color 0.3s;
+}
+#theme-toggle:hover {
+    opacity: 0.9;
+}
