@@ -1,251 +1,440 @@
 <!DOCTYPE html>
-<html lang="es" class="light">
+<html lang="es" data-theme="dark" data-lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dilan Espinosa - Desarrollador Web Junior</title>
-    <!-- Carga de Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Carga de Lucide Icons (¡Esencial para los iconos!) -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <!-- ENLACE AL ARCHIVO DE ESTILOS -->
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dilan Espinosa — Desarrollador Full-Stack</title>
+<meta name="description" content="Portafolio de Dilan Espinosa, Desarrollador Full-Stack especializado en Next.js, Supabase, Node.js e integración de IA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Botón Flotante para cambiar tema -->
-    <button id="theme-toggle" aria-label="Cambiar Tema">
-        <!-- El JS se encarga de crear el SVG del icono correcto (luna o sol) -->
-        <i data-lucide="moon" id="theme-icon" class="w-6 h-6"></i>
-    </button>
-    
-    <!-- Contenedor Principal Centrado -->
-    <div class="max-w-4xl mx-auto p-6 md:p-10 main-card rounded-xl my-8">
-        <!-- HEADER: Información de Contacto y Nombre -->
-        <header class="pb-6 border-b" style="border-color: var(--color-section-border);">
-            <h1 class="text-4xl font-extrabold tracking-tight header-title">DILAN ESTIBEN ESPINOSA LARA</h1>
-            <p class="text-xl font-medium mt-1 subheader-text">Desarrollador Junior Web Full-Stack</p>
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">Dilan<span>.</span></a>
+    <div class="nav-links" id="nav-links">
+      <a href="#about"      class="nav-link" data-i18n="nav-about">Sobre Mí</a>
+      <a href="#skills"     class="nav-link" data-i18n="nav-skills">Skills</a>
+      <a href="#experience" class="nav-link" data-i18n="nav-exp">Experiencia</a>
+      <a href="#projects"   class="nav-link" data-i18n="nav-proj">Proyectos</a>
+      <a href="#education"  class="nav-link" data-i18n="nav-edu">Educación</a>
+      <a href="#contact"    class="nav-link" data-i18n="nav-contact">Contacto</a>
+    </div>
+    <div class="nav-actions">
+      <button id="lang-btn" class="icon-btn lang-btn" aria-label="Change language"><span id="lang-lbl">EN</span></button>
+      <button id="theme-btn" class="icon-btn" aria-label="Toggle theme"><i data-lucide="sun" id="theme-ico"></i></button>
+      <button id="burger" class="icon-btn hamburger" aria-label="Menu"><i data-lucide="menu"></i></button>
+    </div>
+  </div>
+</nav>
 
-            <!-- Contactos -->
-            <div class="flex flex-wrap gap-y-2 gap-x-6 mt-3 text-sm contact-text">
-                <div class="flex items-center space-x-2">
-                    <!-- Clase icon-color para el color dinámico del tema -->
-                    <i data-lucide="map-pin" class="w-4 h-4 icon-color"></i>
-                    <span>Facatativá, Cundinamarca</span>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <i data-lucide="mail" class="w-4 h-4 icon-color"></i>
-                    <a href="mailto:dilanespinosalara@gmail.com" class="hover:underline">dilanespinosalara@gmail.com</a>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <i data-lucide="phone" class="w-4 h-4 icon-color"></i>
-                    <span>320-859-4438</span>
-                </div>
-                <!-- Perfil de LinkedIn -->
-                <div class="flex items-center space-x-2">
-                    <i data-lucide="linkedin" class="w-4 h-4 icon-color"></i>
-                    <a href="https://www.linkedin.com/in/dilan-estiben-espinosa-lara-531b90219/" target="_blank" class="hover:underline">LinkedIn Profile</a>
-                </div>
-                <!-- Perfil de GitHub -->
-                <div class="flex items-center space-x-2">
-                    <i data-lucide="github" class="w-4 h-4 icon-color"></i>
-                    <a href="https://github.com/Stei1n" target="_blank" class="hover:underline">GitHub/Stei1n</a>
-                </div>
-            </div>
-        </header>
-
-        <!-- GRID PRINCIPAL: Perfil, Habilidades, Educación y Experiencia/Portafolio -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-            <!-- COLUMNA IZQUIERDA: Perfil y Habilidades / Educación -->
-            <aside class="md:col-span-1 space-y-8">
-
-                <!-- PERFIL PROFESIONAL -->
-                <section>
-                    <h2 class="section-title text-lg uppercase">Perfil</h2>
-                    <p class="text-sm leading-relaxed contact-text">
-                        Desarrollador Junior Web con 1 año de experiencia profesional en la implementación de soluciones Full-Stack.
-                        Sólida formación técnica en el SENA y actual estudiante de Ingeniería de Sistemas. Experiencia práctica en
-                        producción con tecnologías como Node.js, Express y MySQL. Destacado por la participación exitosa en
-                        proyectos en producción, la capacidad para resolver bugs y el desarrollo de nuevos módulos funcionales bajo
-                        metodología SCRUM. Busco un rol remoto para aplicar y expandir mis conocimientos en arquitecturas modernas.
-                    </p>
-                </section>
-
-                <!-- HABILIDADES TÉCNICAS -->
-                <section>
-                    <h2 class="section-title text-lg uppercase">Habilidades Técnicas</h2>
-
-                    <!-- Categorías de Habilidades -->
-                    <div class="space-y-4">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-sm font-semibold w-full mb-1 contact-text">Lenguajes:</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">JavaScript (JS)</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">TypeScript (TS)</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">HTML5</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">CSS3</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">SQL</span>
-                        </div>
-
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-sm font-semibold w-full mb-1 contact-text">Frameworks/Librerías:</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Angular</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">React</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Node.js</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Express.js</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Laravel</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">WordPress</span>
-                        </div>
-
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-sm font-semibold w-full mb-1 contact-text">Bases de Datos:</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">MySQL</span>
-                        </div>
-
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-sm font-semibold w-full mb-1 contact-text">Herramientas/Metodologías:</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Git</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">SCRUM</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Desarrollo Front-end</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Desarrollo Back-end</span>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- EDUCACIÓN -->
-                <section>
-                    <h2 class="section-title text-lg uppercase">Educación</h2>
-
-                    <!-- UNIMINUTO -->
-                    <div class="education-card p-4 rounded-lg main-card mb-4 border" style="border-color: var(--color-card-border);">
-                        <h3 class="font-bold experience-title">Ingeniería, Systems Engineering</h3>
-                        <p class="text-sm experience-subtitle">UNIMINUTO Colombia</p>
-                        <p class="text-xs mt-1 experience-date">Feb. 2025 – Actualidad</p>
-                    </div>
-
-                    <!-- SENA -->
-                    <div class="education-card p-4 rounded-lg main-card border" style="border-color: var(--color-card-border);">
-                        <h3 class="font-bold experience-title">Tecnico en programacion de software</h3>
-                        <p class="text-sm experience-subtitle">Servicio Nacional de Aprendizaje (SENA)</p>
-                        <p class="text-xs mt-1 experience-date">Mar. 2022 – Oct. 2024</p>
-                    </div>
-                </section>
-
-            </aside>
-
-            <!-- COLUMNA DERECHA: Experiencia Laboral y Portafolio -->
-            <main class="md:col-span-2 space-y-8">
-                
-                <!-- EXPERIENCIA LABORAL -->
-                <section>
-                    <h2 class="section-title text-lg uppercase">Experiencia Laboral</h2>
-
-                    <!-- EXPERIENCIA 1: 1ByteAtATime -->
-                    <div class="experience-card main-card p-5 rounded-lg border-l-4 border-l-cyan-600 shadow-md mb-6">
-                        <div class="flex justify-between items-start mb-2">
-                            <div>
-                                <h3 class="text-xl font-bold experience-title">Desarrollador</h3>
-                                <p class="text-md font-semibold experience-subtitle">1ByteAtATime</p>
-                            </div>
-                            <div class="text-right">
-                                <span class="text-sm font-medium experience-date whitespace-nowrap">Ago. 2023 – Abr. 2024</span>
-                                <p class="text-xs experience-date">Bogotá</p>
-                            </div>
-                        </div>
-
-                        <ul class="list-disc ml-5 list-item space-y-2 text-sm">
-                            <li>Implementación Full-Stack de nuevas funcionalidades en la plataforma GPSByte, participando en el ciclo completo de desarrollo, desde la conceptualización hasta el deployment a producción.</li>
-                            <li>Resolución activa de conflictos de código y bugs en un entorno de desarrollo compartido, utilizando Git para mantener la estabilidad del branch principal.</li>
-                            <li>Integración exitosa de librerías y herramientas de terceros para mejorar la eficiencia y capacidad del sistema.</li>
-                        </ul>
-                    </div>
-
-                    <!-- EXPERIENCIA 2: Servimax & Cía. -->
-                    <div class="experience-card main-card p-5 rounded-lg border-l-4 border-l-cyan-600 shadow-md">
-                        <div class="flex justify-between items-start mb-2">
-                            <div>
-                                <h3 class="text-xl font-bold experience-title">Desarrollador Web Junior</h3>
-                                <p class="text-md font-semibold experience-subtitle">Servimax & Cía.</p>
-                            </div>
-                            <div class="text-right">
-                                <span class="text-sm font-medium experience-date whitespace-nowrap">Ene. 2023 – Jul. 2023</span>
-                                <p class="text-xs experience-date">Bogotá</p>
-                            </div>
-                        </div>
-
-                        <ul class="list-disc ml-5 list-item space-y-2 text-sm">
-                            <li>Desarrollo de módulos clave, incluyendo Inventario y un Esquema Financiero, demostrando habilidad para mapear requerimientos de negocio a soluciones funcionales.</li>
-                            <li>Diseño e implementación de un Modelo Entidad-Relación (ER) para optimizar la estructura de la base de datos MySQL.</li>
-                            <li>Mantenimiento y corrección proactiva de fallos en producción, asegurando la continuidad operativa de la aplicación.</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <!-- PORTAFOLIO Y PROYECTOS (ACTUALIZADO CON TUS REPOSITORIOS) -->
-                <section>
-                    <h2 class="section-title text-lg uppercase">Portafolio y Proyectos</h2>
-
-                    <!-- PROYECTO 1: To-Do-App -->
-                    <div class="project-card main-card p-5 rounded-lg shadow-md mb-4 border" style="border-color: var(--color-card-border);">
-                        <h3 class="text-xl font-bold experience-title mb-2">To-Do-App (Gestor de Tareas)</h3>
-                        <p class="text-sm contact-text mb-3">Aplicación simple y funcional para la gestión de listas de tareas diarias, enfocada en la usabilidad y la demostración de manipulación del DOM y estado (usando JavaScript).</p>
-                        
-                        <div class="flex flex-wrap gap-2 mb-3">
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">JavaScript</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">HTML5</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">CSS3</span>
-                        </div>
-
-                        <div class="flex space-x-3 mt-4">
-                            <!-- DEMO URL (Usando el nombre de tu repo To-Do-App) -->
-                            <a href="https://stei1n.github.io/To-Do-App/" target="_blank" class="btn-link btn-demo">
-                                <i data-lucide="play" class="w-4 h-4 mr-2 icon-color-inverted"></i>
-                                Ver Demo
-                            </a>
-                            <!-- CÓDIGO FUENTE URL (Usando el nombre de tu repo To-Do-App) -->
-                            <a href="https://github.com/Stei1n/To-Do-App" target="_blank" class="btn-link btn-code">
-                                <i data-lucide="code" class="w-4 h-4 mr-2 icon-color"></i>
-                                Código Fuente
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- PROYECTO 2: Blog-personal -->
-                    <div class="project-card main-card p-5 rounded-lg shadow-md border" style="border-color: var(--color-card-border);">
-                        <h3 class="text-xl font-bold experience-title mb-2">Blog Personal</h3>
-                        <p class="text-sm contact-text mb-3">Plataforma de publicación de artículos con un sistema de comentarios y un panel de administración. Demuestra habilidades en la creación de interfaces de usuario complejas y lógica de negocio (usando JavaScript).</p>
-                        
-                        <div class="flex flex-wrap gap-2 mb-3">
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">JavaScript</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">HTML/CSS</span>
-                            <span class="skill-tag px-3 py-1 rounded-full text-xs">Diseño UI</span>
-                        </div>
-
-                        <div class="flex space-x-3 mt-4">
-                            <!-- DEMO URL (Usando el nombre de tu repo Blog-personal) -->
-                            <a href="https://stei1n.github.io/Blog-personal/" target="_blank" class="btn-link btn-demo">
-                                <i data-lucide="play" class="w-4 h-4 mr-2 icon-color-inverted"></i>
-                                Ver Demo
-                            </a>
-                            <!-- CÓDIGO FUENTE URL (Usando el nombre de tu repo Blog-personal) -->
-                            <a href="https://github.com/Stei1n/Blog-personal" target="_blank" class="btn-link btn-code">
-                                <i data-lucide="code" class="w-4 h-4 mr-2 icon-color"></i>
-                                Código Fuente
-                            </a>
-                        </div>
-                    </div>
-
-                    <p class="text-xs mt-4 italic experience-date">
-                    </p>
-                </section>
-            </main>
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-noise"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge fade">
+        <span class="pulse"></span>
+        <span data-i18n="badge-avail">Disponible para trabajar</span>
+      </div>
+      <h1 class="hero-name fade up">
+        <span class="hero-hi" data-i18n="hero-hi">Hola, soy</span><br>
+        Dilan<br><em>Espinosa.</em>
+      </h1>
+      <p class="hero-role fade up">
+        <span data-i18n="hero-prefix">Desarrollador </span><span id="tw" class="tw"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-bio fade up" data-i18n="hero-bio">Construyo soluciones Full-Stack escalables con Next.js, Supabase e integración de IA. Me enfoco en arquitecturas limpias y experiencias de usuario que importan.</p>
+      <div class="hero-cta fade up">
+        <a href="#projects" class="btn-accent" data-i18n="btn-projects">Ver Proyectos</a>
+        <a href="https://www.linkedin.com/in/dilan-estiben-espinosa-lara-531b90219/" target="_blank" class="btn-outline">
+          <i data-lucide="download"></i>
+          <span data-i18n="btn-cv">Descargar CV</span>
+        </a>
+      </div>
+      <div class="hero-social fade up">
+        <a href="https://github.com/Stei1n" target="_blank" class="soc-link" aria-label="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" class="sk-icon-inv" style="width:20px;height:20px">
+        </a>
+        <a href="https://www.linkedin.com/in/dilan-estiben-espinosa-lara-531b90219/" target="_blank" class="soc-link" aria-label="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width:20px;height:20px">
+        </a>
+        <a href="mailto:dilanespinosalara@gmail.com" class="soc-link" aria-label="Email"><i data-lucide="mail"></i></a>
+        <a href="tel:+573208594438" class="soc-link" aria-label="Phone"><i data-lucide="phone"></i></a>
+      </div>
+    </div>
+    <div class="hero-avatar fade">
+      <div class="avatar-frame">
+        <!-- Replace with: <img src="tu-foto.jpg" alt="Dilan Espinosa"> -->
+        <span class="avatar-initials">DE</span>
+      </div>
+      <div class="avatar-info">
+        <div class="avatar-stat">
+          <span data-i18n="stat1-l">Años de exp.</span>
+          <strong data-i18n="stat1">2+</strong>
         </div>
+        <div class="avatar-stat">
+          <span data-i18n="stat2-l">Proyectos</span>
+          <strong data-i18n="stat2">6+</strong>
+        </div>
+        <div class="avatar-stat">
+          <span data-i18n="stat3-l">Apps en prod.</span>
+          <strong data-i18n="stat3">3</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-line"></div>
+  <div class="scroll-cue">
+    <i data-lucide="chevrons-down"></i>
+  </div>
+</section>
 
+<!-- ABOUT -->
+<section id="about" class="section section-alt">
+  <div class="container">
+    <div class="sh fade">
+      <span class="sh-num" data-i18n="about-tag">01</span>
+      <h2 data-i18n="about-h">Sobre mí</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-body fade">
+        <p data-i18n="about-p1">Soy un <strong>Desarrollador Web Full-Stack</strong> con más de 2 años de experiencia profesional construyendo y desplegando aplicaciones en producción. Estudio <strong>Ingeniería de Sistemas en UNIMINUTO</strong>.</p>
+        <p data-i18n="about-p2">En los últimos meses construí un <strong>SaaS multi-idioma con IA</strong> para gestión de socios comerciales, una plataforma de inversiones institucional, un pipeline de localización de activos usando <strong>Gemini API</strong> y un bot de Messenger con <strong>n8n</strong>.</p>
+        <p data-i18n="about-p3">Busco un rol remoto donde aplicar mis habilidades en <strong>Next.js, Supabase y Node.js</strong> y crecer en el ecosistema de IA aplicada.</p>
+      </div>
+      <div class="stats-col fade up">
+        <div class="stat-row"><span class="stat-n" data-i18n="stat1">2+</span><span class="stat-l" data-i18n="stat1-l">Años de exp.</span></div>
+        <div class="stat-row"><span class="stat-n" data-i18n="stat2">6+</span><span class="stat-l" data-i18n="stat2-l">Proyectos</span></div>
+        <div class="stat-row"><span class="stat-n" data-i18n="stat3">3</span><span class="stat-l" data-i18n="stat3-l">Apps en prod.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="container">
+    <div class="sh fade">
+      <span class="sh-num" data-i18n="skills-tag">02</span>
+      <h2 data-i18n="skills-h">Stack Tecnológico</h2>
+    </div>
+    <div class="skills-table fade">
+      <div class="sk-row">
+        <div class="sk-cat">
+          <i data-lucide="code-2"></i>
+          <span data-i18n="sk-lang">Lenguajes</span>
+        </div>
+        <div class="sk-items">
+          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JS">JavaScript</span>
+          <span class="sk-tag key"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TS">TypeScript</span>
+          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5">HTML5</span>
+          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3">CSS3</span>
+          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="SQL">SQL</span>
+        </div>
+      </div>
+      <div class="sk-row">
+        <div class="sk-cat">
+          <i data-lucide="layers"></i>
+          <span data-i18n="sk-fw">Frameworks</span>
+        </div>
+        <div class="sk-items sk-icon-inv">
+          <span class="sk-tag key"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js">Next.js</span>
+          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React">React</span>
+          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js">Node.js</span>
+          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express">Express.js</span>
+          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" alt="Angular">Angular</span>
+          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel">Laravel</span>
+        </div>
+      </div>
+      <div class="sk-row">
+        <div class="sk-cat">
+          <i data-lucide="database"></i>
+          <span data-i18n="sk-db">Bases de Datos</span>
+        </div>
+        <div class="sk-items">
+          <span class="sk-tag key"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt="Supabase">Supabase</span>
+          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">PostgreSQL</span>
+          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL">MySQL</span>
+        </div>
+      </div>
+      <div class="sk-row">
+        <div class="sk-cat">
+          <i data-lucide="wrench"></i>
+          <span data-i18n="sk-tools">Herramientas</span>
+        </div>
+        <div class="sk-items">
+          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git">Git</span>
+          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux">Linux VPS</span>
+          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" alt="Nginx">Nginx</span>
+          <span class="sk-tag key">Gemini AI</span>
+          <span class="sk-tag">n8n</span>
+          <span class="sk-tag">SCRUM</span>
+          <span class="sk-tag">PM2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section section-alt">
+  <div class="container">
+    <div class="sh fade">
+      <span class="sh-num" data-i18n="exp-tag">03</span>
+      <h2 data-i18n="exp-h">Experiencia Laboral</h2>
+    </div>
+    <div class="tl">
+      <!-- SCALLA.AI (Current) -->
+      <div class="tl-item">
+        <div class="tl-aside fade">
+          <time data-i18n="j0-date">Ene 2026 – Actualidad</time>
+          <span class="tl-loc" data-i18n="j0-loc">Bogotá · Remoto</span>
+        </div>
+        <div class="tl-body fade up">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+            <h3 class="tl-role" data-i18n="j0-role">Desarrollador Full-Stack</h3>
+            <span style="padding:2px 8px;border-radius:4px;font-size:.7rem;font-weight:700;background:var(--accent-bg);color:var(--accent);border:1px solid var(--accent-bdr)" data-i18n="j0-badge">Actual</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+            <div style="width:40px;height:40px;border-radius:8px;background:#6366F1;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+              <i data-lucide="hammer" style="width:22px;height:22px;color:#fff"></i>
+            </div>
+            <div>
+              <p class="tl-company" style="margin:0">SCALLA.AI</p>
+            </div>
+          </div>
+          <ul class="tl-list">
+            <li data-i18n="j0-l1">Desarrollo de infraestructura de comunicación omnicanal integrando <strong>WhatsApp/Meta, n8n</strong> y servidores Baileys para el Messenger Bot.</li>
+            <li data-i18n="j0-l2">Gestión del backend y lógica de negocio utilizando <strong>Supabase, Edge Functions</strong> y bases de datos relacionales.</li>
+            <li data-i18n="j0-l3">Sincronización en tiempo real y persistencia de mensajes para garantizar estabilidad del sistema.</li>
+            <li data-i18n="j0-l4">Construcción de interfaces fluidas con <strong>React y TypeScript</strong>; desarrollando el Partner Dashboard, Bridge Markets Portal y el AI Flyer Localizer.</li>
+          </ul>
+          <div class="tl-chips"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Supabase</span><span>n8n</span><span>Gemini AI</span><span>Meta API</span><span>VPS</span></div>
+        </div>
+      </div>
+      <!-- 1ByteAtATime -->
+      <div class="tl-item">
+        <div class="tl-aside fade">
+          <time data-i18n="j1-date">Ago 2023 – Abr 2024</time>
+          <span class="tl-loc" data-i18n="j1-loc">Bogotá</span>
+        </div>
+        <div class="tl-body fade up">
+          <h3 class="tl-role" data-i18n="j1-role">Desarrollador Full-Stack</h3>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+            <div style="width:40px;height:40px;border-radius:8px;background:var(--surface-2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+              <i data-lucide="cpu" style="width:22px;height:22px;color:var(--accent)"></i>
+            </div>
+            <div>
+              <p class="tl-company" style="margin:0" data-i18n="j1-co">1ByteAtATime</p>
+            </div>
+          </div>
+          <ul class="tl-list">
+            <li data-i18n="j1-l1">Implementación Full-Stack de funcionalidades en la plataforma <strong>GPSByte</strong>, cubriendo el ciclo completo hasta producción.</li>
+            <li data-i18n="j1-l2">Resolución de conflictos y bugs con <strong>Git</strong> manteniendo la estabilidad del branch principal.</li>
+            <li data-i18n="j1-l3">Integración de librerías de terceros para mejorar eficiencia del sistema.</li>
+          </ul>
+          <div class="tl-chips"><span>Node.js</span><span>Express</span><span>MySQL</span><span>Git</span><span>Angular</span></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-aside fade">
+          <time data-i18n="j2-date">Ene 2023 – Jul 2023</time>
+          <span class="tl-loc" data-i18n="j2-loc">Bogotá</span>
+        </div>
+        <div class="tl-body fade up">
+          <h3 class="tl-role" data-i18n="j2-role">Desarrollador Web Junior</h3>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+            <div style="width:40px;height:40px;border-radius:8px;background:var(--surface-2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+              <i data-lucide="briefcase" style="width:22px;height:22px;color:var(--accent)"></i>
+            </div>
+            <div>
+              <p class="tl-company" style="margin:0" data-i18n="j2-co">Servimax & Cía.</p>
+            </div>
+          </div>
+          <ul class="tl-list">
+            <li data-i18n="j2-l1">Desarrollo de módulos de <strong>Inventario y Esquema Financiero</strong>, traduciendo requerimientos de negocio a soluciones funcionales.</li>
+            <li data-i18n="j2-l2">Diseño de <strong>Modelo Entidad-Relación</strong> para optimizar la estructura de la base de datos MySQL.</li>
+            <li data-i18n="j2-l3">Mantenimiento proactivo y corrección de fallos en producción.</li>
+          </ul>
+          <div class="tl-chips"><span>Laravel</span><span>MySQL</span><span>JavaScript</span><span>HTML/CSS</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="sh fade">
+      <span class="sh-num" data-i18n="proj-tag">04</span>
+      <h2 data-i18n="proj-h">Proyectos</h2>
     </div>
 
-    <!-- ENLACE AL ARCHIVO JAVASCRIPT: ¡DEBE LLAMARSE TEMA.JS EN TU CARPETA! -->
-    <script src="tema.js"></script>
+    <div class="proj-featured">
+      <!-- Partner Dashboard -->
+      <div class="proj-card conf fade">
+        <div class="proj-head">
+          <div class="proj-icon-wrap"><i data-lucide="layout-dashboard"></i></div>
+          <div class="proj-labels">
+            <span class="badge-conf"><i data-lucide="lock"></i><span data-i18n="conf">Confidencial</span></span>
+            <span class="badge-recent" data-i18n="recent">Reciente</span>
+          </div>
+        </div>
+        <h3 data-i18n="p1-h">Partner Dashboard</h3>
+        <p data-i18n="p1-d">SaaS multi-idioma con IA para gestión de socios comerciales. Localización automática de marketing, reportes en tiempo real, sistema de leads y panel administrativo completo.</p>
+        <div class="proj-stack"><span>Next.js</span><span>Supabase</span><span>TypeScript</span><span>Gemini AI</span><span>i18n</span><span>VPS</span></div>
+        <div class="proj-footer">
+          <span class="lnk-private"><i data-lucide="lock"></i><span data-i18n="priv-code">Código Privado</span></span>
+        </div>
+      </div>
 
+      <!-- Bridge Markets -->
+      <div class="proj-card conf fade up">
+        <div class="proj-head">
+          <div class="proj-icon-wrap"><i data-lucide="trending-up"></i></div>
+          <div class="proj-labels">
+            <span class="badge-conf"><i data-lucide="lock"></i><span data-i18n="conf">Confidencial</span></span>
+            <span class="badge-recent" data-i18n="recent">Reciente</span>
+          </div>
+        </div>
+        <h3 data-i18n="p2-h">Bridge Markets Portal</h3>
+        <p data-i18n="p2-d">Landing page institucional para plataforma de trading e inversiones. Diseño editorial premium, animaciones, formulario de captación de leads y despliegue en producción.</p>
+        <div class="proj-stack"><span>Next.js</span><span>Supabase</span><span>TypeScript</span><span>UI/UX</span><span>Hostinger</span></div>
+        <div class="proj-footer">
+          <span class="lnk-private"><i data-lucide="lock"></i><span data-i18n="priv-code">Código Privado</span></span>
+        </div>
+      </div>
+
+      <!-- AI Flyer Localizer -->
+      <div class="proj-card conf fade">
+        <div class="proj-head">
+          <div class="proj-icon-wrap"><i data-lucide="sparkles"></i></div>
+          <div class="proj-labels">
+            <span class="badge-conf"><i data-lucide="lock"></i><span data-i18n="conf">Confidencial</span></span>
+            <span class="badge-recent" data-i18n="recent">Reciente</span>
+          </div>
+        </div>
+        <h3 data-i18n="p3-h">AI Flyer Localizer</h3>
+        <p data-i18n="p3-d">Pipeline de IA para localización automática de 100+ activos de marketing. Extrae y traduce texto con Gemini API manteniendo la integridad visual de los diseños 3D.</p>
+        <div class="proj-stack"><span>Gemini API</span><span>Node.js</span><span>TypeScript</span><span>Next.js API</span></div>
+        <div class="proj-footer">
+          <span class="lnk-private"><i data-lucide="lock"></i><span data-i18n="priv-code">Código Privado</span></span>
+        </div>
+      </div>
+
+      <!-- Messenger Bot -->
+      <div class="proj-card conf fade up">
+        <div class="proj-head">
+          <div class="proj-icon-wrap"><i data-lucide="bot"></i></div>
+          <div class="proj-labels">
+            <span class="badge-conf"><i data-lucide="lock"></i><span data-i18n="conf">Confidencial</span></span>
+            <span class="badge-recent" data-i18n="recent">Reciente</span>
+          </div>
+        </div>
+        <h3 data-i18n="p4-h">Messenger Bot + n8n</h3>
+        <p data-i18n="p4-d">Integración bidireccional entre Facebook Messenger y n8n. Webhook que procesa mensajes, los enruta a flujos de automatización y devuelve respuestas vía Meta Graph API.</p>
+        <div class="proj-stack"><span>Meta Graph API</span><span>n8n</span><span>Node.js</span><span>Webhooks</span></div>
+        <div class="proj-footer">
+          <span class="lnk-private"><i data-lucide="lock"></i><span data-i18n="priv-code">Código Privado</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-public" style="margin-top:16px">
+      <!-- To-Do App -->
+      <div class="proj-card fade">
+        <div class="proj-head">
+          <div class="proj-icon-wrap"><i data-lucide="circle-check-big"></i></div>
+          <div class="proj-labels"></div>
+        </div>
+        <h3 data-i18n="p5-h">To-Do App</h3>
+        <p data-i18n="p5-d">Gestión de tareas con manipulación del DOM, estado local y persistencia en localStorage.</p>
+        <div class="proj-stack"><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div>
+        <div class="proj-footer">
+          <a href="https://stei1n.github.io/To-Do-App/" target="_blank" class="lnk-demo"><i data-lucide="play"></i><span data-i18n="demo">Demo</span></a>
+          <a href="https://github.com/Stei1n/To-Do-App" target="_blank" class="lnk-gh"><i data-lucide="github"></i><span data-i18n="code">Código</span></a>
+        </div>
+      </div>
+
+      <!-- Blog Personal -->
+      <div class="proj-card fade up">
+        <div class="proj-head">
+          <div class="proj-icon-wrap"><i data-lucide="newspaper"></i></div>
+          <div class="proj-labels"></div>
+        </div>
+        <h3 data-i18n="p6-h">Blog Personal</h3>
+        <p data-i18n="p6-d">Plataforma de publicación con sistema de comentarios y panel de administración.</p>
+        <div class="proj-stack"><span>JavaScript</span><span>HTML/CSS</span><span>UI Design</span></div>
+        <div class="proj-footer">
+          <a href="https://stei1n.github.io/Blog-personal/" target="_blank" class="lnk-demo"><i data-lucide="play"></i><span data-i18n="demo">Demo</span></a>
+          <a href="https://github.com/Stei1n/Blog-personal" target="_blank" class="lnk-gh"><i data-lucide="github"></i><span data-i18n="code">Código</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section section-alt">
+  <div class="container">
+    <div class="sh fade">
+      <span class="sh-num" data-i18n="edu-tag">05</span>
+      <h2 data-i18n="edu-h">Educación</h2>
+    </div>
+    <div class="edu-list fade">
+      <div class="edu-item">
+        <div class="edu-ico"><i data-lucide="graduation-cap"></i></div>
+        <div class="edu-body">
+          <h3 data-i18n="edu1-d">Ingeniería de Sistemas</h3>
+          <p data-i18n="edu1-i">UNIMINUTO Colombia</p>
+          <p style="font-size:.78rem;margin-top:2px" data-i18n="edu1-date">Feb 2025 – Presente</p>
+        </div>
+        <span class="edu-tag current" data-i18n="edu-curr">En curso</span>
+      </div>
+      <div class="edu-item">
+        <div class="edu-ico"><i data-lucide="code"></i></div>
+        <div class="edu-body">
+          <h3 data-i18n="edu2-d">Técnico en Programación de Software</h3>
+          <p data-i18n="edu2-i">SENA — Serv. Nacional de Aprendizaje</p>
+          <p style="font-size:.78rem;margin-top:2px" data-i18n="edu2-date">Mar 2022 – Oct 2024</p>
+        </div>
+        <span class="edu-tag done" data-i18n="edu-done">Graduado</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="sh fade">
+      <span class="sh-num" data-i18n="contact-tag">06</span>
+      <h2 data-i18n="contact-h">Hablemos</h2>
+    </div>
+    <div class="contact-wrap fade up">
+      <p class="contact-lead" data-i18n="contact-bio">¿Tienes un proyecto en mente o una oportunidad? Me encantaría escucharte. Disponible para roles remotos Full-Stack.</p>
+      <div class="contact-grid">
+        <a href="mailto:dilanespinosalara@gmail.com" class="contact-item"><i data-lucide="mail"></i><span>dilanespinosalara@gmail.com</span></a>
+        <a href="https://www.linkedin.com/in/dilan-estiben-espinosa-lara-531b90219/" target="_blank" class="contact-item"><i data-lucide="linkedin"></i><span>LinkedIn Profile</span></a>
+        <a href="https://github.com/Stei1n" target="_blank" class="contact-item"><i data-lucide="github"></i><span>GitHub / Stei1n</span></a>
+        <a href="tel:+573208594438" class="contact-item"><i data-lucide="phone"></i><span>+57 320-859-4438</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span data-i18n="footer">Diseñado y desarrollado por</span> <strong>Dilan Espinosa</strong> · Facatativá, Colombia · <span id="fyear"></span>
+</footer>
+
+<script src="tema.js"></script>
 </body>
 </html>
