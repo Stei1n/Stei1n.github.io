@@ -188,11 +188,23 @@ document.addEventListener('DOMContentLoaded',()=>{
   function restartTw(){ clearTimeout(timer); ch=0;idx=0;del=false; if(twEl)twEl.textContent=''; timer=setTimeout(twStep,400); }
   restartTw();
 
-  // Scroll animations
+  // Scroll animations with staggering
   const obs = new IntersectionObserver(entries=>{
-    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } });
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        // Handle staggering for items within containers
+        const items = e.target.querySelectorAll('.proj-card, .tl-item, .sk-row, .edu-item, .contact-item');
+        items.forEach((item, i) => {
+          item.style.transitionDelay = `${(i + 1) * 0.1}s`;
+          item.classList.add('in');
+        });
+        obs.unobserve(e.target);
+      }
+    });
   },{threshold:.1});
-  document.querySelectorAll('.fade').forEach(el=>obs.observe(el));
+
+  document.querySelectorAll('.section, .fade, .proj-featured, .proj-public, .tl, .skills-table, .edu-list, .contact-grid').forEach(el=>obs.observe(el));
 
   // Active nav
   const sections = document.querySelectorAll('section[id]');
