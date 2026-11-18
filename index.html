@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dilan Espinosa — Desarrollador Full-Stack</title>
-<meta name="description" content="Portafolio de Dilan Espinosa, Desarrollador Full-Stack especializado en Next.js, Supabase, Node.js e integración de IA.">
+<title>Dilan Espinosa | Desarrollador Backend y Full Stack</title>
+<meta name="description" content="Dilan Espinosa, desarrollador Backend y Full Stack. Experiencia en TypeScript, Node.js, React, PostgreSQL, APIs y automatización. Proyectos y CV.">
+<link rel="canonical" href="https://stei1n.github.io/">
 <style>body{background:#080810;color:#E8E8F0;font-family:sans-serif}</style>
 <link rel="stylesheet" href="styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +21,7 @@
     <a href="#hero" class="nav-logo">Dilan<span>.</span></a>
     <div class="nav-links" id="nav-links">
       <a href="#about"      class="nav-link" data-i18n="nav-about">Sobre Mí</a>
-      <a href="#skills"     class="nav-link" data-i18n="nav-skills">Skills</a>
+      <a href="#skills"     class="nav-link" data-i18n="nav-skills">Tecnologías</a>
       <a href="#experience" class="nav-link" data-i18n="nav-exp">Experiencia</a>
       <a href="#projects"   class="nav-link" data-i18n="nav-proj">Proyectos</a>
       <a href="#education"  class="nav-link" data-i18n="nav-edu">Educación</a>
@@ -47,22 +48,20 @@
         <span class="hero-hi" data-i18n="hero-hi">Hola, soy</span><br>
         Dilan<br><em>Espinosa.</em>
       </h1>
-      <p class="hero-role fade up">
-        <span data-i18n="hero-prefix">Desarrollador </span><span id="tw" class="tw"></span><span class="cursor">|</span>
-      </p>
-      <p class="hero-bio fade up" data-i18n="hero-bio">Construyo soluciones Full-Stack escalables con Next.js, Supabase e integración de IA. Me enfoco en arquitecturas limpias y experiencias de usuario que importan.</p>
+      <p class="hero-role fade up" data-i18n="hero-role">Desarrollador Backend y Full Stack</p>
+      <p class="hero-bio fade up" data-i18n="hero-bio">Desarrollo aplicaciones web, APIs e integraciones con TypeScript, Node.js, React y PostgreSQL. He trabajado en sistemas de atención al cliente, ventas, inventarios y gestión clínica.</p>
       <div class="hero-cta fade up">
         <a href="#projects" class="btn-accent" data-i18n="btn-projects">Ver Proyectos</a>
-        <a href="https://www.linkedin.com/in/dilan-estiben-espinosa-lara-531b90219/" target="_blank" class="btn-outline">
+        <a href="assets/CV_Dilan_Espinosa_Lara.pdf" download class="btn-outline">
           <i data-lucide="download"></i>
-          <span data-i18n="btn-cv">Descargar CV</span>
+          <span data-i18n="btn-cv">Descargar CV en español</span>
         </a>
       </div>
       <div class="hero-social fade up">
-        <a href="https://github.com/Stei1n" target="_blank" class="soc-link" aria-label="GitHub">
+        <a href="https://github.com/Stei1n" target="_blank" rel="noopener noreferrer" class="soc-link" aria-label="GitHub">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" class="sk-icon-inv" style="width:20px;height:20px">
         </a>
-        <a href="https://www.linkedin.com/in/dilan-estiben-espinosa-lara-531b90219/" target="_blank" class="soc-link" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/dilan-estiben-espinosa-lara-531b90219/" target="_blank" rel="noopener noreferrer" class="soc-link" aria-label="LinkedIn">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width:20px;height:20px">
         </a>
         <a href="mailto:dilanespinosalara@gmail.com" class="soc-link" aria-label="Email"><i data-lucide="mail"></i></a>
@@ -71,23 +70,9 @@
     </div>
     <div class="hero-avatar fade float-anim">
       <div class="avatar-frame">
-        <img src="logos/fotopersonal.jpeg" alt="Dilan Espinosa">
+        <img src="logos/fotopersonal.jpeg" alt="Dilan Espinosa" width="280" height="280">
       </div>
-      <div class="avatar-info">
-        <div class="avatar-stat">
-          <span data-i18n="stat1-l">Años de exp.</span>
-          <strong data-i18n="stat1">2+</strong>
-        </div>
-        <div class="avatar-stat">
-          <span data-i18n="stat2-l">Proyectos</span>
-          <strong data-i18n="stat2">6+</strong>
-        </div>
-        <div class="avatar-stat">
-          <span data-i18n="stat3-l">Apps en prod.</span>
-          <strong data-i18n="stat3">3</strong>
-        </div>
       </div>
-    </div>
   </div>
   <div class="hero-line"></div>
   <div class="scroll-cue">
@@ -99,21 +84,16 @@
 <section id="about" class="section section-alt">
   <div class="container">
     <div class="sh fade">
-      <span class="sh-num" data-i18n="about-tag">01</span>
+
       <h2 data-i18n="about-h">Sobre mí</h2>
     </div>
-    <div class="about-grid">
+    <div class="about-grid about-summary">
       <div class="about-body fade">
-        <p data-i18n="about-p1">Soy un <strong>Desarrollador Web Full-Stack</strong> con más de 2 años de experiencia profesional construyendo y desplegando aplicaciones en producción. Estudio <strong>Ingeniería de Sistemas en UNIMINUTO</strong>.</p>
-        <p data-i18n="about-p2">En los últimos meses construí un <strong>SaaS multi-idioma con IA</strong> para gestión de socios comerciales, una plataforma de inversiones institucional, un pipeline de localización de activos usando <strong>Gemini API</strong> y un bot de Messenger con <strong>n8n</strong>.</p>
-        <p data-i18n="about-p3">Busco un rol remoto donde aplicar mis habilidades en <strong>Next.js, Supabase y Node.js</strong> y crecer en el ecosistema de IA aplicada.</p>
+        <p data-i18n="about-p1">Soy desarrollador Backend y Full Stack, con experiencia desde 2023. Trabajo en el backend, las bases de datos y la interfaz, y participo en el despliegue y mantenimiento de las aplicaciones.</p>
+        <p data-i18n="about-p2">En Scalla IA desarrollé proyectos como FarmaBot, Mi Carriel, Fundación Ángel K’a y Bridge Markets. También desarrollo PixelAula, SportsIntel AI y WonderForge Kids.</p>
+        <p data-i18n="about-p3">Soy técnico en Programación de Software del SENA y estudio Ingeniería de Sistemas en UNIMINUTO. Busco oportunidades de desarrollo Backend y Full Stack, especialmente en modalidad remota.</p>
       </div>
-      <div class="stats-col fade up">
-        <div class="stat-row"><span class="stat-n" data-i18n="stat1">2+</span><span class="stat-l" data-i18n="stat1-l">Años de exp.</span></div>
-        <div class="stat-row"><span class="stat-n" data-i18n="stat2">6+</span><span class="stat-l" data-i18n="stat2-l">Proyectos</span></div>
-        <div class="stat-row"><span class="stat-n" data-i18n="stat3">3</span><span class="stat-l" data-i18n="stat3-l">Apps en prod.</span></div>
       </div>
-    </div>
   </div>
 </section>
 
@@ -121,8 +101,8 @@
 <section id="skills" class="section">
   <div class="container">
     <div class="sh fade">
-      <span class="sh-num" data-i18n="skills-tag">02</span>
-      <h2 data-i18n="skills-h">Stack Tecnológico</h2>
+
+      <h2 data-i18n="skills-h">Tecnologías</h2>
     </div>
     <div class="skills-table fade">
       <div class="sk-row">
@@ -135,7 +115,7 @@
           <span class="sk-tag key"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TS">TypeScript</span>
           <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5">HTML5</span>
           <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3">CSS3</span>
-          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="SQL">SQL</span>
+          <span class="sk-tag">Python</span><span class="sk-tag">SQL</span>
         </div>
       </div>
       <div class="sk-row">
@@ -149,7 +129,7 @@
           <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js">Node.js</span>
           <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express">Express.js</span>
           <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" alt="Angular">Angular</span>
-          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel">Laravel</span>
+          <span class="sk-tag">NestJS</span><span class="sk-tag">FastAPI</span><span class="sk-tag">Capacitor</span>
         </div>
       </div>
       <div class="sk-row">
@@ -160,7 +140,7 @@
         <div class="sk-items">
           <span class="sk-tag key"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt="Supabase">Supabase</span>
           <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">PostgreSQL</span>
-          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL">MySQL</span>
+          <span class="sk-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL">MySQL</span><span class="sk-tag">SQLite</span><span class="sk-tag">Drizzle ORM</span>
         </div>
       </div>
       <div class="sk-row">
@@ -175,7 +155,7 @@
           <span class="sk-tag key">Gemini AI</span>
           <span class="sk-tag">n8n</span>
           <span class="sk-tag">SCRUM</span>
-          <span class="sk-tag">PM2</span>
+          <span class="sk-tag">PM2</span><span class="sk-tag">Docker</span><span class="sk-tag">EasyPanel</span><span class="sk-tag">Remotion</span><span class="sk-tag">FFmpeg</span>
         </div>
       </div>
     </div>
@@ -183,221 +163,131 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" class="section section-alt">
-  <div class="container">
-    <div class="sh fade">
-      <span class="sh-num" data-i18n="exp-tag">03</span>
-      <h2 data-i18n="exp-h">Experiencia Laboral</h2>
+<section id="experience" class="section section-alt"><div class="container">
+  <div class="sh fade"><h2 data-i18n="exp-h">Experiencia laboral</h2></div>
+  <div class="tl">
+  <article class="tl-item">
+    <div class="tl-aside fade"><time><span data-i18n="scalla-date">Ene 2026 - Nov 2026</span></time></div>
+    <div class="tl-body fade">
+      <h3 class="tl-role"><span data-i18n="scalla-role">Desarrollador Web Full Stack</span></h3>
+      <div class="company-line"><img src="logos/logo-scalla-ia.jpg" alt="" width="40" height="40" loading="lazy"><p class="tl-company">Scalla IA</p></div>
+      <ul class="tl-list"><li><span data-i18n="scalla-task-0">FarmaBot. Desarrollé la atención por WhatsApp con IA, consulta de inventario y precios, lectura de recetas e imágenes, pedidos y transferencia a vendedores.</span></li><li><span data-i18n="scalla-task-1">Mi Carriel. Trabajé en el asistente comercial y el panel de conversaciones, pedidos, clientes y PQR. Desarrollé adaptadores para World Office y Baum, permisos y zonas de reparto.</span></li><li><span data-i18n="scalla-task-2">Fundación Ángel K’a. Desarrollé el sitio web y los módulos de citas, pacientes e historia clínica, con notas firmadas, proformas y controles de acceso en Supabase.</span></li><li><span data-i18n="scalla-task-3">Inventarios y contabilidad. Creé reportes de existencias, ventas y rotación, la integración con ContarERP y un cliente de Factus para pruebas de facturación en sandbox.</span></li><li><span data-i18n="scalla-task-4">Bridge Markets. Trabajé en el portal de afiliados, campañas, comisiones y materiales de marketing. Automaticé la adaptación a otros idiomas de más de 100 piezas con Gemini API.</span></li><li><span data-i18n="scalla-task-5">Preparé despliegues en EasyPanel, respaldos y pruebas de restauración. También conecté Messenger con n8n y documenté la operación y entrega de los proyectos.</span></li></ul>
+      <div class="tl-chips"><span>TypeScript</span><span>React</span><span>Next.js</span><span>Python</span><span>FastAPI</span><span>Supabase</span><span>EasyPanel</span></div>
     </div>
-    <div class="tl">
-      <!-- SCALLA.AI (Current) -->
-      <div class="tl-item">
-        <div class="tl-aside fade">
-          <time data-i18n="j0-date">Ene 2026 – Actualidad</time>
-          <span class="tl-loc" data-i18n="j0-loc">Bogotá · Remoto</span>
-        </div>
-        <div class="tl-body fade up">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;flex-wrap:wrap">
-            <h3 class="tl-role" data-i18n="j0-role">Desarrollador Full-Stack</h3>
-            <span style="padding:2px 8px;border-radius:4px;font-size:.7rem;font-weight:700;background:var(--accent-bg);color:var(--accent);border:1px solid var(--accent-bdr);white-space:nowrap" data-i18n="j0-badge">Actual</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
-            <div style="width:40px;height:40px;border-radius:8px;background:#6366F1;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden">
-              <img src="logos/logo-scalla-ia.jpg" alt="SCALLA.AI" style="width:100%;height:100%;object-fit:cover">
-            </div>
-            <div>
-              <p class="tl-company" style="margin:0">SCALLA.AI</p>
-            </div>
-          </div>
-          <ul class="tl-list">
-            <li data-i18n="j0-l1">Desarrollo de infraestructura de comunicación omnicanal integrando <strong>WhatsApp/Meta, n8n</strong> y servidores Baileys para el Messenger Bot.</li>
-            <li data-i18n="j0-l2">Gestión del backend y lógica de negocio utilizando <strong>Supabase, Edge Functions</strong> y bases de datos relacionales.</li>
-            <li data-i18n="j0-l3">Sincronización en tiempo real y persistencia de mensajes para garantizar estabilidad del sistema.</li>
-            <li data-i18n="j0-l4">Construcción de interfaces fluidas con <strong>React y TypeScript</strong>; desarrollando el Partner Dashboard, Bridge Markets Portal y el AI Flyer Localizer.</li>
-          </ul>
-          <div class="tl-chips"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Supabase</span><span>n8n</span><span>Gemini AI</span><span>Meta API</span><span>VPS</span></div>
-        </div>
-      </div>
-      <!-- 1ByteAtATime -->
-      <div class="tl-item">
-        <div class="tl-aside fade">
-          <time data-i18n="j1-date">Ago 2023 – Abr 2024</time>
-          <span class="tl-loc" data-i18n="j1-loc">Bogotá</span>
-        </div>
-        <div class="tl-body fade up">
-          <h3 class="tl-role" data-i18n="j1-role">Desarrollador Full-Stack</h3>
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
-            <div style="width:40px;height:40px;border-radius:8px;background:var(--surface-2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden">
-              <img src="logos/1bytelogo.jpg" alt="1ByteAtATime" style="width:100%;height:100%;object-fit:cover">
-            </div>
-            <div>
-              <p class="tl-company" style="margin:0" data-i18n="j1-co">1ByteAtATime</p>
-            </div>
-          </div>
-          <ul class="tl-list">
-            <li data-i18n="j1-l1">Implementación Full-Stack de funcionalidades en la plataforma <strong>GPSByte</strong>, cubriendo el ciclo completo hasta producción.</li>
-            <li data-i18n="j1-l2">Resolución de conflictos y bugs con <strong>Git</strong> manteniendo la estabilidad del branch principal.</li>
-            <li data-i18n="j1-l3">Integración de librerías de terceros para mejorar eficiencia del sistema.</li>
-          </ul>
-          <div class="tl-chips"><span>Node.js</span><span>Express</span><span>MySQL</span><span>Git</span><span>Angular</span></div>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-aside fade">
-          <time data-i18n="j2-date">Ene 2023 – Jul 2023</time>
-          <span class="tl-loc" data-i18n="j2-loc">Bogotá</span>
-        </div>
-        <div class="tl-body fade up">
-          <h3 class="tl-role" data-i18n="j2-role">Desarrollador Web Junior</h3>
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
-            <div style="width:40px;height:40px;border-radius:8px;background:var(--surface-2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden">
-              <img src="logos/servimax_ca_logo.jpg" alt="Servimax" style="width:100%;height:100%;object-fit:cover">
-            </div>
-            <div>
-              <p class="tl-company" style="margin:0" data-i18n="j2-co">Servimax & Cía.</p>
-            </div>
-          </div>
-          <ul class="tl-list">
-            <li data-i18n="j2-l1">Desarrollo de módulos de <strong>Inventario y Esquema Financiero</strong>, traduciendo requerimientos de negocio a soluciones funcionales.</li>
-            <li data-i18n="j2-l2">Diseño de <strong>Modelo Entidad-Relación</strong> para optimizar la estructura de la base de datos MySQL.</li>
-            <li data-i18n="j2-l3">Mantenimiento proactivo y corrección de fallos en producción.</li>
-          </ul>
-          <div class="tl-chips"><span>Laravel</span><span>MySQL</span><span>JavaScript</span><span>HTML/CSS</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </article>
 
+  <article class="tl-item">
+    <div class="tl-aside fade"><time><span data-i18n="freelance-date">May 2026 - Jul 2026</span></time></div>
+    <div class="tl-body fade">
+      <h3 class="tl-role"><span data-i18n="freelance-role">Desarrollador Backend por proyecto</span></h3>
+      <div class="company-line"><p class="tl-company">Freelance</p></div>
+      <ul class="tl-list"><li><span data-i18n="freelance-task-0">Creé el backend de una aplicación móvil con NestJS y TypeScript. Diseñé PostgreSQL con Drizzle ORM, incorporé autenticación con JWT y Google OAuth y documenté los endpoints con Swagger.</span></li></ul>
+      <div class="tl-chips"><span>NestJS</span><span>TypeScript</span><span>PostgreSQL</span><span>Drizzle ORM</span><span>JWT</span><span>Swagger</span></div>
+    </div>
+  </article>
+
+  <article class="tl-item">
+    <div class="tl-aside fade"><time><span data-i18n="byte-date">Ago 2023 - Abr 2024</span></time></div>
+    <div class="tl-body fade">
+      <h3 class="tl-role"><span data-i18n="byte-role">Desarrollador Web</span></h3>
+      <div class="company-line"><img src="logos/1bytelogo.jpg" alt="" width="40" height="40" loading="lazy"><p class="tl-company">1ByteAtATime</p></div>
+      <ul class="tl-list"><li><span data-i18n="byte-task-0">Participé en el desarrollo, mantenimiento y despliegue de GPSByte. Trabajé con el equipo en nuevas funcionalidades, integración de cambios y solución de problemas bajo metodología Scrum.</span></li></ul>
+      <div class="tl-chips"><span>Node.js</span><span>Express</span><span>MySQL</span><span>Git</span><span>Angular</span></div>
+    </div>
+  </article>
+
+  <article class="tl-item">
+    <div class="tl-aside fade"><time><span data-i18n="servimax-date">Ene 2023 - Jul 2023</span></time></div>
+    <div class="tl-body fade">
+      <h3 class="tl-role"><span data-i18n="servimax-role">Desarrollador Web Junior</span></h3>
+      <div class="company-line"><img src="logos/servimax_ca_logo.jpg" alt="" width="40" height="40" loading="lazy"><p class="tl-company">Servimax & Cía.</p></div>
+      <ul class="tl-list"><li><span data-i18n="servimax-task-0">Corregí errores en producción, desarrollé módulos de inventario y diseñé el modelo de datos para la gestión interna. También apoyé la integración de nuevas funcionalidades.</span></li></ul>
+      <div class="tl-chips"><span>MySQL</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+    </div>
+  </article></div>
+</div></section>
 <!-- PROJECTS -->
-<section id="projects" class="section">
-  <div class="container">
-    <div class="sh fade">
-      <span class="sh-num" data-i18n="proj-tag">04</span>
-      <h2 data-i18n="proj-h">Proyectos</h2>
-    </div>
+<section id="projects" class="section"><div class="container">
+  <div class="sh fade"><h2 data-i18n="proj-h">Proyectos</h2></div>
+  <div class="project-group-heading fade"><h3 data-i18n="personal-h">Proyectos propios</h3></div>
+  <div class="proj-featured"><article class="proj-card fade" id="project-pixelaula">
+    <h3>PixelAula</h3>
+    <p data-i18n="pixelaula-purpose">Plataforma educativa web y Android para aprender bases de datos, redes y física mediante juegos.</p>
+    <p data-i18n="pixelaula-work">Desarrollé el registro, el inicio de sesión y el guardado del progreso. Incorporé juegos, mapas 3D, avatares y recompensas, con una interfaz compartida mediante Capacitor.</p>
+    <div class="proj-stack"><span>React</span><span>TypeScript</span><span>Express</span><span>Supabase</span><span>Capacitor</span></div>
 
-    <div class="proj-featured">
-      <!-- Partner Dashboard -->
-      <div class="proj-card conf fade">
-        <div class="proj-head">
-          <div class="proj-icon-wrap" style="background:var(--surface-2);border:1px solid var(--border-md)">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" class="sk-icon-inv" style="width:24px;height:24px">
-          </div>
-          <div class="proj-labels">
-            <span class="badge-conf"><i data-lucide="lock"></i><span data-i18n="conf">Confidencial</span></span>
-            <span class="badge-recent" data-i18n="recent">Reciente</span>
-          </div>
-        </div>
-        <h3 data-i18n="p1-h">Partner Dashboard</h3>
-        <p data-i18n="p1-d">SaaS multi-idioma con IA para gestión de socios comerciales. Localización automática de marketing, reportes en tiempo real, sistema de leads y panel administrativo completo.</p>
-        <div class="proj-stack"><span>Next.js</span><span>Supabase</span><span>TypeScript</span><span>Gemini AI</span><span>i18n</span><span>VPS</span></div>
-        <div class="proj-footer">
-          <span class="lnk-private"><i data-lucide="lock"></i><span data-i18n="priv-code">Código Privado</span></span>
-        </div>
-      </div>
+  </article>
+<article class="proj-card fade" id="project-sportsintel">
+    <h3>SportsIntel AI</h3>
+    <p data-i18n="sportsintel-purpose">Aplicación para analizar encuentros de fútbol y NBA y evaluar pronósticos con resultados históricos.</p>
+    <p data-i18n="sportsintel-work">Construí el panel y el backend, conecté OpenFootball, BALLDONTLIE y BoxScore Lab e incorporé modelos Poisson, Dixon–Coles y Elo. Las evaluaciones usan datos anteriores a cada partido y muestran Brier score, log loss y calibración.</p>
+    <div class="proj-stack"><span>Python</span><span>FastAPI</span><span>React</span><span>SQLite</span><span>Backtesting</span></div>
 
-      <!-- Bridge Markets -->
-      <div class="proj-card conf fade up">
-        <div class="proj-head">
-          <div class="proj-icon-wrap" style="background:var(--surface-2);border:1px solid var(--border-md)">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" style="width:24px;height:24px">
-          </div>
-          <div class="proj-labels">
-            <span class="badge-conf"><i data-lucide="lock"></i><span data-i18n="conf">Confidencial</span></span>
-            <span class="badge-recent" data-i18n="recent">Reciente</span>
-          </div>
-        </div>
-        <h3 data-i18n="p2-h">Bridge Markets Portal</h3>
-        <p data-i18n="p2-d">Landing page institucional para plataforma de trading e inversiones. Diseño editorial premium, animaciones, formulario de captación de leads y despliegue en producción.</p>
-        <div class="proj-stack"><span>Next.js</span><span>Supabase</span><span>TypeScript</span><span>UI/UX</span><span>Hostinger</span></div>
-        <div class="proj-footer">
-          <span class="lnk-private"><i data-lucide="lock"></i><span data-i18n="priv-code">Código Privado</span></span>
-        </div>
-      </div>
+  </article>
+<article class="proj-card fade" id="project-wonderforge">
+    <h3>WonderForge Kids</h3>
+    <p data-i18n="wonderforge-purpose">Herramientas para organizar campañas de marketing y producción audiovisual.</p>
+    <p data-i18n="wonderforge-work">Desarrollé la planificación de campañas a partir del perfil de una marca, con guiones, textos y planes de grabación. Trabajé en prototipos de video horizontal y vertical, seguimiento de tareas y una oficina 3D para consultar las producciones.</p>
+    <div class="proj-stack"><span>Node.js</span><span>TypeScript</span><span>React</span><span>Remotion</span><span>Three.js</span><span>FFmpeg</span><span>SQLite</span></div>
 
-      <!-- AI Flyer Localizer -->
-      <div class="proj-card conf fade">
-        <div class="proj-head">
-          <div class="proj-icon-wrap" style="background:var(--surface-2);border:1px solid var(--border-md)">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" style="width:24px;height:24px">
-          </div>
-          <div class="proj-labels">
-            <span class="badge-conf"><i data-lucide="lock"></i><span data-i18n="conf">Confidencial</span></span>
-            <span class="badge-recent" data-i18n="recent">Reciente</span>
-          </div>
-        </div>
-        <h3 data-i18n="p3-h">AI Flyer Localizer</h3>
-        <p data-i18n="p3-d">Pipeline de IA para localización automática de 100+ activos de marketing. Extrae y traduce texto con Gemini API manteniendo la integridad visual de los diseños 3D.</p>
-        <div class="proj-stack"><span>Gemini API</span><span>Node.js</span><span>TypeScript</span><span>Next.js API</span></div>
-        <div class="proj-footer">
-          <span class="lnk-private"><i data-lucide="lock"></i><span data-i18n="priv-code">Código Privado</span></span>
-        </div>
-      </div>
+  </article>
+<article class="proj-card fade" id="project-trading">
+    <h3>Trading</h3>
+    <p data-i18n="trading-purpose">Diseño de un piloto para automatizar una estrategia sobre oro.</p>
+    <p data-i18n="trading-work">Definí la separación entre investigación, evaluación histórica, control de riesgo y ejecución, con registro de decisiones para revisar y reproducir el comportamiento del sistema.</p>
+    <div class="proj-stack"><span>Arquitectura / Architecture</span><span>Backtesting</span><span>Control de riesgo / Risk controls</span></div>
 
-      <!-- Messenger Bot -->
-      <div class="proj-card conf fade up">
-        <div class="proj-head">
-          <div class="proj-icon-wrap" style="background:var(--surface-2);border:1px solid var(--border-md)">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" style="width:24px;height:24px">
-          </div>
-          <div class="proj-labels">
-            <span class="badge-conf"><i data-lucide="lock"></i><span data-i18n="conf">Confidencial</span></span>
-            <span class="badge-recent" data-i18n="recent">Reciente</span>
-          </div>
-        </div>
-        <h3 data-i18n="p4-h">Messenger Bot + n8n</h3>
-        <p data-i18n="p4-d">Integración bidireccional entre Facebook Messenger y n8n. Webhook que procesa mensajes, los enruta a flujos de automatización y devuelve respuestas vía Meta Graph API.</p>
-        <div class="proj-stack"><span>Meta Graph API</span><span>n8n</span><span>Node.js</span><span>Webhooks</span></div>
-        <div class="proj-footer">
-          <span class="lnk-private"><i data-lucide="lock"></i><span data-i18n="priv-code">Código Privado</span></span>
-        </div>
-      </div>
-    </div>
+  </article></div>
+  <div class="project-group-heading fade"><h3 data-i18n="scalla-projects-h">Proyectos en Scalla IA</h3></div>
+  <div class="proj-featured"><article class="proj-card fade" id="project-farmabot">
+    <h3>FarmaBot</h3>
+    <p data-i18n="farmabot-purpose">Atención comercial por WhatsApp para una operación de droguerías.</p>
+    <p data-i18n="farmabot-work">Conecté mensajería e IA con inventario y precios de PosCloud. Desarrollé el panel de chats, lectura de recetas, pedidos, atención humana, alertas y respaldos con verificación de restauración.</p>
+    <div class="proj-stack"><span>Python</span><span>FastAPI</span><span>SQLite</span><span>Gemini API</span><span>Evolution</span><span>Chatwoot</span></div>
 
-    <div class="proj-public" style="margin-top:16px">
-      <!-- To-Do App -->
-      <div class="proj-card fade">
-        <div class="proj-head">
-          <div class="proj-icon-wrap" style="background:var(--surface-2);border:1px solid var(--border-md)">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" style="width:24px;height:24px">
-        </div>
-          <div class="proj-labels"></div>
-        </div>
-        <h3 data-i18n="p5-h">To-Do App</h3>
-        <p data-i18n="p5-d">Gestión de tareas con manipulación del DOM, estado local y persistencia en localStorage.</p>
-        <div class="proj-stack"><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div>
-        <div class="proj-footer">
-          <a href="https://stei1n.github.io/To-Do-App/" target="_blank" class="lnk-demo"><i data-lucide="play"></i><span data-i18n="demo">Demo</span></a>
-          <a href="https://github.com/Stei1n/To-Do-App" target="_blank" class="lnk-gh"><i data-lucide="github"></i><span data-i18n="code">Código</span></a>
-        </div>
-      </div>
+  </article>
+<article class="proj-card fade" id="project-carriel">
+    <h3>Mi Carriel</h3>
+    <p data-i18n="carriel-purpose">Asistente comercial y panel para gestionar conversaciones, pedidos y clientes.</p>
+    <p data-i18n="carriel-work">Trabajé en los flujos del asistente, roles de acceso y zonas de reparto. Desarrollé adaptadores para World Office y Baum y el procesamiento de tareas con reintentos y auditoría.</p>
+    <div class="proj-stack"><span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>WhatsApp</span><span>World Office</span><span>Baum</span></div>
 
-      <!-- Blog Personal -->
-      <div class="proj-card fade up">
-        <div class="proj-head">
-          <div class="proj-icon-wrap" style="background:var(--surface-2);border:1px solid var(--border-md)">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" style="width:24px;height:24px">
-        </div>
-          <div class="proj-labels"></div>
-        </div>
-        <h3 data-i18n="p6-h">Blog Personal</h3>
-        <p data-i18n="p6-d">Plataforma de publicación con sistema de comentarios y panel de administración.</p>
-        <div class="proj-stack"><span>JavaScript</span><span>HTML/CSS</span><span>UI Design</span></div>
-        <div class="proj-footer">
-          <a href="https://stei1n.github.io/Blog-personal/" target="_blank" class="lnk-demo"><i data-lucide="play"></i><span data-i18n="demo">Demo</span></a>
-          <a href="https://github.com/Stei1n/Blog-personal" target="_blank" class="lnk-gh"><i data-lucide="github"></i><span data-i18n="code">Código</span></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </article>
+<article class="proj-card fade" id="project-angelka">
+    <h3>Fundación Ángel K’a</h3>
+    <p data-i18n="angelka-purpose">Sitio web y sistema de gestión clínica y administrativa.</p>
+    <p data-i18n="angelka-work">Desarrollé citas, agendas, pacientes, historia clínica, notas firmadas y proformas. Implementé permisos por rol, auditoría y controles de acceso en la base de datos con Supabase.</p>
+    <div class="proj-stack"><span>Next.js</span><span>React</span><span>TypeScript</span><span>PostgreSQL</span><span>Supabase</span><span>RLS</span></div>
 
+  </article>
+<article class="proj-card fade" id="project-bridge">
+    <h3>Bridge Markets</h3>
+    <p data-i18n="bridge-purpose">Portal de afiliados, materiales de marketing y páginas de captación.</p>
+    <p data-i18n="bridge-work">Trabajé en campañas, comisiones, analíticas, creación de landing pages y revisión administrativa. Desarrollé AI Flyer Localizer para adaptar a otros idiomas más de 100 piezas de marketing con Gemini API.</p>
+    <div class="proj-stack"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Supabase</span><span>Gemini API</span></div>
+
+  </article>
+<article class="proj-card fade" id="project-accounting">
+    <h3>Inventarios y contabilidad</h3>
+    <p data-i18n="accounting-purpose">Reportes operativos e integración con servicios contables.</p>
+    <p data-i18n="accounting-work">Creé consultas de existencias, ventas y rotación e importación de inventarios desde Excel. Desarrollé la integración PostgreSQL–ContarERP con control de pendientes y reintentos y un cliente de Factus para facturación en sandbox.</p>
+    <div class="proj-stack"><span>Node.js</span><span>TypeScript</span><span>PostgreSQL</span><span>ContarERP</span><span>Factus</span><span>PosCloud</span></div>
+
+  </article>
+<article class="proj-card fade" id="project-messenger">
+    <h3>Messenger Bot</h3>
+    <p data-i18n="messenger-purpose">Integración de Facebook Messenger con flujos de automatización.</p>
+    <p data-i18n="messenger-work">Conecté la recepción y el envío de mensajes mediante webhooks y Meta Graph API, con n8n para procesar las conversaciones y devolver respuestas.</p>
+    <div class="proj-stack"><span>Node.js</span><span>Meta Graph API</span><span>Webhooks</span><span>n8n</span></div>
+
+  </article></div>
+  <div class="project-extra fade"><span data-i18n="other-code">También puedes revisar mi aplicación de tareas en GitHub.</span> <a href="https://github.com/Stei1n/Proyecto_ToDo" target="_blank" rel="noopener noreferrer">Proyecto ToDo ↗</a></div>
+</div></section>
 <!-- EDUCATION -->
 <section id="education" class="section section-alt">
   <div class="container">
     <div class="sh fade">
-      <span class="sh-num" data-i18n="edu-tag">05</span>
+
       <h2 data-i18n="edu-h">Educación</h2>
     </div>
     <div class="edu-list fade">
@@ -427,15 +317,15 @@
 <section id="contact" class="section">
   <div class="container">
     <div class="sh fade">
-      <span class="sh-num" data-i18n="contact-tag">06</span>
+
       <h2 data-i18n="contact-h">Hablemos</h2>
     </div>
     <div class="contact-wrap fade up">
-      <p class="contact-lead" data-i18n="contact-bio">¿Tienes un proyecto en mente o una oportunidad? Me encantaría escucharte. Disponible para roles remotos Full-Stack.</p>
+      <p class="contact-lead" data-i18n="contact-bio">Estoy disponible para oportunidades Backend y Full Stack. Puedes escribirme para conversar sobre una vacante o conocer más de mis proyectos.</p>
       <div class="contact-grid">
         <a href="mailto:dilanespinosalara@gmail.com" class="contact-item"><i data-lucide="mail"></i><span>dilanespinosalara@gmail.com</span></a>
-        <a href="https://www.linkedin.com/in/dilan-estiben-espinosa-lara-531b90219/" target="_blank" class="contact-item"><i data-lucide="linkedin"></i><span>LinkedIn Profile</span></a>
-        <a href="https://github.com/Stei1n" target="_blank" class="contact-item"><i data-lucide="github"></i><span>GitHub / Stei1n</span></a>
+        <a href="https://www.linkedin.com/in/dilan-estiben-espinosa-lara-531b90219/" target="_blank" rel="noopener noreferrer" class="contact-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="" width="20" height="20"><span>LinkedIn</span></a>
+        <a href="https://github.com/Stei1n" target="_blank" rel="noopener noreferrer" class="contact-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="" width="20" height="20" class="github-icon"><span>GitHub / Stei1n</span></a>
         <a href="tel:+573208594438" class="contact-item"><i data-lucide="phone"></i><span>+57 320-859-4438</span></a>
       </div>
     </div>
