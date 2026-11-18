@@ -1,5 +1,7 @@
 const T = {
   "es": {
+    "bridge-code": "Código del portal ↗",
+    "accounting-code": "Código de integración ↗",
     "hero-role": "Desarrollador Backend y Full Stack",
     "nav-about": "Sobre Mí",
     "nav-skills": "Tecnologías",
@@ -78,6 +80,8 @@ const T = {
     "other-code": "También puedes revisar mi aplicación de tareas en GitHub."
   },
   "en": {
+    "bridge-code": "Portal source code ↗",
+    "accounting-code": "Integration source code ↗",
     "hero-role": "Backend and Full Stack Developer",
     "nav-about": "About",
     "nav-skills": "Skills",
