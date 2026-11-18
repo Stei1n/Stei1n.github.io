@@ -77,7 +77,7 @@ const T = {
     "messenger-work": "Conecté la recepción y el envío de mensajes mediante webhooks y Meta Graph API, con n8n para procesar las conversaciones y devolver respuestas.",
     "personal-h": "Proyectos propios",
     "scalla-projects-h": "Proyectos en Scalla IA",
-    "other-code": "También puedes revisar mi aplicación de tareas en GitHub."
+    "other-code": "Otros proyectos en GitHub."
   },
   "en": {
     "bridge-code": "Portal source code ↗",
@@ -157,7 +157,7 @@ const T = {
     "messenger-work": "Connected inbound and outbound messaging with webhooks and Meta Graph API, using n8n to process conversations and return responses.",
     "personal-h": "Personal projects",
     "scalla-projects-h": "Projects at Scalla IA",
-    "other-code": "You can also explore my task management application on GitHub."
+    "other-code": "More projects on GitHub."
   }
 };
 
