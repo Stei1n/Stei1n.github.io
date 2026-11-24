@@ -8,7 +8,7 @@ Portafolio de desarrollo Backend y Full Stack, disponible en español e inglés.
 
 - Experiencia en Scalla IA, desarrollo freelance, 1ByteAtATime y Servimax & Cía.
 - Proyectos propios como PixelAula, SportsIntel AI, WonderForge Kids y el diseño de un piloto de trading.
-- Proyectos profesionales como FarmaBot, Mi Carriel, Fundación Ángel K’a, Bridge Markets, integraciones contables y automatización con Messenger.
+- Proyectos profesionales como FarmaBot, Mi Carriel, Fundación Ángel K’a, Bridge Markets e integraciones contables.
 - Tecnologías, educación, contacto y CV descargable.
 
 ## Desarrollo local
